@@ -1,0 +1,88 @@
+GET http://localhost:3000/api/users
+
+###
+POST http://localhost:3000/api/users
+Content-Type: application/json
+
+{
+    "name": "Nuevo",
+    "email": "micrreo267@correo.es",
+    "age":37,
+    "password": "12345"
+}
+
+###
+PUT http://localhost:3000/api/users/micrreo267@correo.es
+Content-Type: application/json
+
+{
+    "name": "Marcos",
+    "email": "micrreo2@correo.es",
+    "age":37,
+    "password": "12345",
+    "role": "admin"
+}
+
+###
+DELETE http://localhost:3000/api/users/micrreo267@correo.es
+Content-Type: application/json
+
+###
+POST http://localhost:3000/api/storage HTTP/1.1
+Content-Type: multipart/form-data; boundary=boundary123
+
+--boundary123
+Content-Disposition: form-data; name="image"; filename="bici_lago.jpg"
+Content-Type: image/jpeg
+
+< ./bici_lago.jpg
+--boundary123--
+
+
+###
+POST http://localhost:3000/api/tracks HTTP/1.1
+Content-Type: application/json
+api_key: Api-publica-123
+# //GET http://localhost:3000/contact
+# GET http://localhost:3000
+
+# ###
+# GET  http://localhost:3000/api/users
+
+# # ###
+# # GET http://localhost:3000/api/cursos/programacion
+
+# # ###
+# # GET http://localhost:3000/api/cursos/matematicas
+
+# # ###
+# # GET http://localhost:3000/api/cursos/matematicas/algebra?ordenar=vistas
+
+# # ###
+# # POST http://localhost:3000
+
+# ###
+# POST http://localhost:3000/api/users
+# Content-Type: application/json
+
+# {
+#     "name": "Paco",
+#     "age":  23,
+#     "email": "paco@gmail",
+#     "password":"12345", // Aquí se almacenará el hash de la contraseña
+#     "role": "admin"
+    
+# }
+
+# ###
+# POST http://localhost:3000/api/storage HTTP/1.1
+# Content-Type: multipart/form-data; boundary=boundary123
+
+# --boundary123
+# Content-Disposition: form-data; nama="image"; filename="bici_lago.jpg"
+# Content-Type: image/jpeg
+
+# ./bici_lago.jpg
+# --boundary123--
+
+# # # {"name": "U-tad"}
