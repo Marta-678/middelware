@@ -86,3 +86,15 @@ api_key: Api-publica-123
 # --boundary123--
 
 # # # {"name": "U-tad"}
+
+
+###
+POST http://localhost:3000/api/auth/register
+Content-Type: application/json
+
+{
+    "name": "Nuevo",
+    "email": "tomeu267@correo.es",
+    "age":37,
+    "password": "12345678"
+}
